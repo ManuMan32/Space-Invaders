@@ -2,6 +2,8 @@
 
 //  ---- Variables ----
 
+const root = document.documentElement;
+root.style.setProperty("--playerHeigth",(innerHeight-125-64)+"px");
 const game = document.getElementById("game");
 const player = document.getElementById("player");
 const scoreSpan = document.getElementById("score")
@@ -14,7 +16,10 @@ const buttonSpace = document.getElementById("button-space");
 
 const mediaQuery = window.matchMedia("(min-width: 1000px)");
 let playerX = 190;
-if (mediaQuery.matches) { playerX = 600 }
+if (mediaQuery.matches) {
+    playerX = 600;
+    root.style.setProperty("--playerHeigth",(innerHeight-64)+"px");
+}
 let requestingMove = false;
 const speed = 6;
 let pressedKeys = {};
