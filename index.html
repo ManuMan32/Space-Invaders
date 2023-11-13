@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Space Invaders</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Sometype+Mono&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+	</head>
+
+	<body>
+		<div id="screen">
+			<div id="game">
+				<div id="player"></div>
+				<div id="enemy-grid"></div>
+				<div id="finished-screen">
+					<span>You finished the game!</span>
+					<span>Thanks for playing</span>
+					<span>Made by Manuel Crocco</span>
+				</div>
+				<div id="UI">
+					<span id="score">000000</span>
+					<span id="level">Level: 1</span>
+					<div id="life">
+						<div id="heart1" class="heart"></div>
+						<div id="heart2" class="heart"></div>
+						<div id="heart3" class="heart"></div>
+					</div>
+				</div>
+				<div id="button-bar">
+					<button id="button-left">
+						<div class="rectangle left"></div>
+					</button>
+					<button id="button-rigth">
+						<div class="rectangle rigth"></div>
+					</button>
+					<div id="space"></div>
+					<button id="button-space">
+						<div class="rectangle"></div>
+					</button>
+				</div>
+			</div>
+		</div>
+		<script src="script.js"></script>
+		<script src="levels.js"></script>
+	</body>
+
+</html>
